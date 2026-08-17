@@ -1,0 +1,17 @@
+{
+  "name": "Yasin Arafat Shakil — Portfolio OS v5.2",
+  "short_name": "Yasin OS v5.2",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#05070a",
+  "theme_color": "#ff6b18",
+  "description": "Responsive, zoom-safe interactive developer portfolio command center",
+  "icons": [
+    {
+      "src": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23ff6b18'/%3E%3Ctext x='50' y='63' text-anchor='middle' font-size='42' font-family='Arial' fill='white'%3EYA%3C/text%3E%3C/svg%3E",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ],
+  "version": "5.2.0"
+}

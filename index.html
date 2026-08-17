@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#07090d">
+<meta name="description" content="Yasin Arafat Shakil — Advanced Full Stack Developer Portfolio OS v4.0">
+<meta name="author" content="Yasin Arafat Shakil">
+<title>Yasin Arafat Shakil | Portfolio OS v4.0</title>
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23ff6b18'/%3E%3Ctext x='50' y='63' text-anchor='middle' font-size='42' font-family='Arial' fill='white'%3EYA%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/app.css">
+</head>
+<body>
+<div class="app-loader" id="appLoader" aria-label="Loading portfolio application">
+  <div class="loader-grid"></div>
+  <div class="loader-orbit orbit-one"></div>
+  <div class="loader-orbit orbit-two"></div>
+  <div class="loader-core"><span>&lt;/&gt;</span></div>
+  <div class="loader-copy">
+    <div class="loader-kicker">YASIN ARAFAT SHAKIL</div>
+    <strong>INITIALIZING <span>PORTFOLIO OS</span></strong>
+    <div class="loader-terminal"><span id="loaderMessage">Booting interface</span><i></i></div>
+    <div class="loader-progress"><em id="loaderProgress"></em></div>
+    <div class="loader-meta"><span>SECURE UI</span><b id="loaderPercent">0%</b><span>v3.0</span></div>
+  </div>
+</div>
+<div class="app-shell">
+  <aside class="sidebar" id="sidebar">
+    <div class="brand"><div class="brand-mark">&lt;/&gt;</div><div><strong>YASIN ARAFAT SHAKIL</strong><span>Portfolio OS</span></div></div>
+    <div class="profile-mini"><img src="assets/img/profile.jpg" alt="Yasin Arafat Shakil"><div><strong>Yasin Shakil</strong><span>Full Stack Developer</span></div></div>
+    <nav class="side-nav" aria-label="Primary navigation">
+      <button class="nav-item active" data-view="dashboard"><span>⌂</span>Dashboard</button>
+      <button class="nav-item" data-view="about"><span>♙</span>About Me</button>
+      <button class="nav-item" data-view="skills"><span>◈</span>Skills</button>
+      <button class="nav-item" data-view="projects"><span>⊞</span>Projects</button>
+      <button class="nav-item" data-view="experience"><span>◷</span>Experience</button>
+      <button class="nav-item" data-view="certificates"><span>▣</span>Certificates</button>
+      <button class="nav-item" data-view="services"><span>ϟ</span>Services</button>
+      <button class="nav-item" data-view="resume"><span>▤</span>Resume</button>
+      <button class="nav-item" data-view="gallery"><span>▧</span>Gallery</button>
+      <button class="nav-item" data-view="contact"><span>✉</span>Contact</button>
+    </nav>
+    <div class="quick-links"><small>QUICK LINKS</small><a href="https://github.com/yashakil290905" target="_blank" rel="noopener noreferrer">◉ GitHub</a><a href="https://www.linkedin.com/in/yashakil290905" target="_blank" rel="noopener noreferrer">in LinkedIn</a><a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">▶ YouTube</a><a href="https://www.instagram.com/yashakil290905" target="_blank" rel="noopener noreferrer">◎ Instagram</a><a href="https://www.facebook.com/yashakil290905" target="_blank" rel="noopener noreferrer">f Facebook</a></div>
+    <div class="connect-card"><small>LET'S CONNECT</small><div><a href="https://github.com/yashakil290905" target="_blank" rel="noopener noreferrer">◉</a><a href="https://www.linkedin.com/in/yashakil290905" target="_blank" rel="noopener noreferrer">in</a><a href="https://twitter.com/yashakil290905" target="_blank" rel="noopener noreferrer">♥</a><a href="https://www.instagram.com/yashakil290905" target="_blank" rel="noopener noreferrer">◎</a><a href="https://wa.me/601162051292" target="_blank" rel="noopener noreferrer">◌</a></div></div>
+    <button class="download-btn" id="downloadCv">⇩ <span>Download CV</span><b>⌄</b></button>
+  </aside>
+
+  <main class="main">
+    <header class="topbar">
+<button class="mobile-menu" id="mobileMenu">☰</button><div class="crumb"><span>⌂</span><b id="crumbText">Dashboard</b><em>/</em><span id="crumbSub">Overview</span></div><button class="search-box" id="openCommand"><span>⌕</span><span>Search anything...</span><kbd>Ctrl + K</kbd></button><div class="system-pulse" aria-label="Live system status">
+  <span class="pulse-item"><i class="pulse-dot online"></i><b id="liveClock">--:--:--</b></span>
+  <span class="pulse-item pulse-network"><i class="pulse-dot"></i><b id="networkState">ONLINE</b></span>
+  <span class="pulse-item"><b id="uptimeState">0m</b></span>
+</div>
+<div class="v4-mini-actions"><button id="v4ShortcutsBtn" title="Keyboard shortcuts">⌨</button><button id="v4NetworkBtn" title="Network visualization">◎</button></div>
+<div class="top-actions"><span class="availability"><i></i>Available for work</span><button id="notifyBtn" title="Notifications">✉<sup>1</sup></button><button id="inboxBtn" title="Quick inquiry">♢</button><button id="settingsBtn" title="Settings">⚙</button><button id="themeBtn" title="Theme">☼</button></div></header>
+
+    <section class="view active" id="view-dashboard">
+      <div class="dashboard-grid">
+        <article class="hero card">
+          <div class="hero-photo"><div class="orbit orbit-a"></div><div class="orbit orbit-b"></div><div class="orbit-dot d1"></div><div class="orbit-dot d2"></div><img src="assets/img/profile.jpg" alt="Yasin Arafat Shakil"></div>
+          <div class="hero-copy"><p class="eyebrow">PERSONAL PORTFOLIO / APP EXPERIENCE</p><h1>YASIN ARAFAT<br><span>SHAKIL.</span></h1><div class="job_title typewriter-title" id="jobTitleRotator" aria-live="polite" aria-label="Professional roles">
+            <h3 class="job-type-target"><span class="job-type-main">Full Stack</span> <span class="job-type-accent">Developer</span><span class="job-type-caret" aria-hidden="true"></span></h3>
+          </div><p>I build modern, responsive and high-performance web applications, APIs and practical digital products with clean, maintainable code.</p><div class="hero-actions"><button class="primary" data-view="projects">View My Work ↗</button><button class="ghost" id="heroCv">⇩ Download CV</button></div><small class="connect-label">CONNECT WITH ME</small><div class="social-row"><a href="https://github.com/yashakil290905" target="_blank" rel="noopener noreferrer">◉</a><a href="https://www.linkedin.com/in/yashakil290905" target="_blank" rel="noopener noreferrer">in</a><a href="https://twitter.com/yashakil290905" target="_blank" rel="noopener noreferrer">♥</a><a href="https://www.instagram.com/yashakil290905" target="_blank" rel="noopener noreferrer">◎</a><a href="https://wa.me/601162051292" target="_blank" rel="noopener noreferrer">◌</a></div></div>
+        </article>
+        <article class="command-center card">
+          <div class="section-head">
+            <div><h3>SYSTEM TELEMETRY</h3><h2>Command Center</h2></div>
+            <button id="quickCommandBtn" type="button">CTRL + K</button>
+          </div>
+          <div class="telemetry-grid">
+            <div class="telemetry-item"><span>VISIT</span><b id="sessionTime">00:00</b><small>Session time</small></div>
+            <div class="telemetry-item"><span>MODE</span><b id="interfaceMode">DARK</b><small>Interface</small></div>
+            <div class="telemetry-item"><span>NET</span><b id="networkLatency">—</b><small>Connectivity</small></div>
+            <div class="telemetry-item"><span>APP</span><b>v5.2</b><small>Portfolio OS</small></div>
+          </div>
+          <div class="telemetry-bars">
+            <div><span>UI PERFORMANCE</span><i><em id="uiPerfBar"></em></i><b id="uiPerfText">96%</b></div>
+            <div><span>RESPONSIVE READY</span><i><em style="width:100%"></em></i><b>100%</b></div>
+            <div><span>ACCESSIBILITY</span><i><em id="motionBar"></em></i><b id="motionText">ON</b></div>
+          </div>
+          <div class="command-hints">
+          <button data-command="terminal">⌘ Terminal</button>
+          <button data-command="analytics">◫ Analytics</button><button data-command="projects">⌘ Projects</button><button data-command="skills">◈ Skills</button><button data-command="contact">✉ Contact</button></div>
+        </article>
+        <div class="stat-grid"><article class="stat card"><span>◉</span><div><b>20+</b><small>Projects<br>Completed</small></div></article><article class="stat card"><span>▱</span><div><b>3+</b><small>Years<br>Experience</small></div></article><article class="stat card"><span>▣</span><div><b>15+</b><small>Technologies<br>Mastered</small></div></article><article class="stat card"><span>✪</span><div><b>08</b><small>Certificates<br>Earned</small></div></article><article class="location card"><span>⌖</span><div><small>Location</small><strong>Bangladesh, BD</strong></div></article></div>
+        <div class="info-strip card"><div><span>◷</span><small>Local Time<strong id="localTime">--:--:--</strong></small></div><div><span>▣</span><small>Date<strong id="localDate">---</strong></small></div><div><span>✉</span><small>Email<strong>example@gmail.com</strong></small></div><div><span>⌕</span><small>Phone<strong>+601162051292</strong></small></div><div><span class="status-dot"></span><small>Status<strong>Available for work</strong></small></div></div>
+        <section class="panel skills-panel"><div class="section-head"><h3>MY SKILLS</h3><button data-view="skills">View All ›</button></div><div class="skills-overview"><div class="bars"><div><label>HTML <b>95%</b></label><i><em style="width:95%"></em></i></div><div><label>CSS <b>90%</b></label><i><em style="width:90%"></em></i></div><div><label>JavaScript <b>85%</b></label><i><em style="width:85%"></em></i></div><div><label>PHP <b>80%</b></label><i><em style="width:80%"></em></i></div><div><label>Laravel <b>85%</b></label><i><em style="width:85%"></em></i></div><div><label>MySQL <b>90%</b></label><i><em style="width:90%"></em></i></div></div><div class="tech-grid"><span>HTML</span><span>CSS</span><span>JS</span><span>React</span><span>Bootstrap</span><span>Tailwind</span></div></div></section>
+        <section class="panel projects-panel"><div class="section-head"><h3>RECENT PROJECTS</h3><button data-view="projects">View All ›</button></div><div class="project-mini-grid"><button class="project-mini" data-project="ecommerce"><img src="assets/img/project-2.jpg"><b>E-Commerce Website</b><small>Full Stack</small><div><em>Laravel</em><em>MySQL</em><span>↗</span></div></button><button class="project-mini" data-project="portfolio"><img src="assets/img/project-1.jpg"><b>Portfolio Website</b><small>Frontend</small><div><em>HTML</em><em>CSS</em><em>JS</em><span>↗</span></div></button><button class="project-mini" data-project="task"><img src="assets/img/bg.gif"><b>Task Management App</b><small>MERN Stack</small><div><em>React</em><em>Node.js</em><span>↗</span></div></button></div></section>
+        <section class="panel timeline-panel"><div class="section-head"><h3>EXPERIENCE TIMELINE</h3><button data-view="experience">View All ›</button></div><div class="timeline"><article><i></i><b>2024 – Present</b><strong>Full Stack Developer (Freelance)</strong><p>Building modern web apps and APIs using Laravel, JavaScript and MySQL.</p></article><article><i></i><b>2023 – 2024</b><strong>Web Developer</strong><p>Developed and maintained company websites and internal tools.</p></article><article><i></i><b>2022 – 2023</b><strong>Junior Developer</strong><p>Learned and worked on various web development projects.</p></article></div></section>
+        <section class="panel services-panel"><div class="section-head"><h3>SERVICES</h3><button data-view="services">View All ›</button></div><div class="service-grid"><button data-service="Web Development"><b>◉</b><strong>Web Development</strong><small>Modern & responsive websites</small></button><button data-service="Web Application"><b>▦</b><strong>Web Application</strong><small>Full stack web applications</small></button><button data-service="API Development"><b>⌘</b><strong>API Development</strong><small>RESTful APIs & integrations</small></button><button data-service="E-Commerce"><b>🛒</b><strong>E-Commerce</strong><small>Online stores & e-commerce</small></button><button data-service="Maintenance"><b>⚒</b><strong>Maintenance</strong><small>Bug fixes & website maintenance</small></button><button data-service="Consultation"><b>♙</b><strong>Consultation</strong><small>Tech consultation & support</small></button></div></section>
+        <section class="panel cert-panel"><div class="section-head"><h3>CERTIFICATES</h3><button data-view="certificates">View All ›</button></div><div class="cert-view"><button class="circle-btn" id="certPrev">‹</button><iframe src="assets/img/certificate.pdf#page=1&view=FitH" title="Certificate preview"></iframe><button class="circle-btn" id="certNext">›</button></div><div class="dots"><i class="active"></i><i></i><i></i><i></i></div></section>
+      </div>
+    </section>
+
+    <section class="view" id="view-about"><div class="page-grid"><article class="page-hero card"><div class="portrait"><img src="assets/img/profile.jpg" alt="Yasin Arafat Shakil"></div><div><p class="eyebrow">ABOUT ME</p><h2>Building useful digital products with <span>clean code.</span></h2><p>I am a Full-Stack Developer from Bangladesh with 3+ years of experience across frontend, backend and API development. I enjoy turning ideas into practical, responsive and maintainable web experiences.</p><button class="primary" data-view="contact">Let's Work Together ↗</button></div></article><div class="detail-grid"><article class="panel"><h3>PROFILE</h3><div class="details"><p><span>Name</span>Yasin Arafat Shakil</p><p><span>Role</span>Full Stack Developer</p><p><span>Location</span>Bangladesh, BD</p><p><span>Availability</span><b class="green">Available for work</b></p></div></article><article class="panel"><h3>FOCUS</h3><div class="focus-list"><span>Modern Web Apps</span><span>REST APIs</span><span>Responsive UI</span><span>Database Systems</span><span>Performance</span><span>Clean Architecture</span></div></article></div></div></section>
+
+    <section class="view" id="view-skills"><div class="full-panel panel"><div class="section-head"><div><p class="eyebrow">TECH STACK</p><h2>Skills & Technologies</h2></div></div><div class="skill-page-grid"><div class="skill-card"><h3>Frontend</h3><div class="big-skill"><b>HTML</b><span>95%</span><i><em style="width:95%"></em></i></div><div class="big-skill"><b>CSS</b><span>90%</span><i><em style="width:90%"></em></i></div><div class="big-skill"><b>JavaScript</b><span>85%</span><i><em style="width:85%"></em></i></div></div><div class="skill-card"><h3>Backend</h3><div class="big-skill"><b>PHP</b><span>80%</span><i><em style="width:80%"></em></i></div><div class="big-skill"><b>Laravel</b><span>85%</span><i><em style="width:85%"></em></i></div><div class="big-skill"><b>Python / Django</b><span>80%</span><i><em style="width:80%"></em></i></div></div><div class="skill-card"><h3>Database & Tools</h3><div class="chip-cloud"><span>MySQL</span><span>Git</span><span>GitHub</span><span>REST API</span><span>Bootstrap</span><span>Tailwind CSS</span><span>VS Code</span><span>Linux</span></div></div></div></div></section>
+
+    <section class="view" id="view-projects"><div class="full-panel panel"><div class="section-head"><div><p class="eyebrow">SELECTED WORK</p><h2>Projects</h2></div><div class="filter-row"><button class="filter active">All</button><button class="filter">Web</button><button class="filter">Full Stack</button><button class="filter">API</button></div></div><div class="project-grid"><article class="project-card" data-category="full stack web"><img src="assets/img/project-2.jpg"><div><span>FULL STACK</span><h3>E-Commerce Website</h3><p>Modern online store concept with product management, cart and backend-ready architecture.</p><div class="tags"><b>Laravel</b><b>MySQL</b><b>Bootstrap</b></div><button class="primary" data-service="Web Application">Discuss Project ↗</button></div></article><article class="project-card" data-category="web frontend"><img src="assets/img/project-1.jpg"><div><span>FRONTEND</span><h3>Portfolio Website</h3><p>Responsive portfolio experience with app-style navigation, themes and interactive sections.</p><div class="tags"><b>HTML</b><b>CSS</b><b>JavaScript</b></div><button class="primary" data-service="Web Development">Discuss Project ↗</button></div></article><article class="project-card" data-category="web api"><img src="assets/img/bg.gif"><div><span>WEB APP</span><h3>Task Management App</h3><p>Productivity dashboard concept with authentication-ready flows and modular UI components.</p><div class="tags"><b>React</b><b>Node.js</b><b>MongoDB</b></div><button class="primary" data-service="Web Application">Discuss Project ↗</button></div></article></div></div></section>
+
+    <section class="view" id="view-experience"><div class="full-panel panel"><p class="eyebrow">CAREER PATH</p><h2>Experience Timeline</h2><div class="big-timeline"><article><time>2024 — PRESENT</time><h3>Full Stack Developer · Freelance</h3><p>Building modern web applications and APIs using Laravel, JavaScript and MySQL. Focused on clean UI, practical architecture and reliable delivery.</p></article><article><time>2023 — 2024</time><h3>Web Developer</h3><p>Developed and maintained company websites and internal tools, improving responsive layouts and reusable components.</p></article><article><time>2022 — 2023</time><h3>Junior Developer</h3><p>Worked on learning-focused web projects, backend fundamentals and real-world application patterns.</p></article></div></div></section>
+
+    <section class="view" id="view-certificates"><div class="full-panel panel"><div class="section-head"><div><p class="eyebrow">ACHIEVEMENTS</p><h2>Certificates</h2></div><a class="ghost link-btn" href="assets/img/certificate.pdf" target="_blank">Open PDF ↗</a></div><div class="certificate-full"><iframe src="assets/img/certificate.pdf#view=FitH" title="Certificate"></iframe></div></div></section>
+
+    <section class="view" id="view-services"><div class="full-panel panel"><p class="eyebrow">WHAT I CAN BUILD</p><h2>Services</h2><p class="page-subtitle">Choose a service and send an inquiry directly to WhatsApp.</p><div class="service-page-grid"><button data-service="Web Development"><b>◉</b><h3>Web Development</h3><p>Modern, responsive and performance-focused websites.</p></button><button data-service="Web Application"><b>▦</b><h3>Web Application</h3><p>Full-stack applications with scalable UI and backend architecture.</p></button><button data-service="API Development"><b>⌘</b><h3>API Development</h3><p>REST APIs, integrations and structured data services.</p></button><button data-service="E-Commerce"><b>🛒</b><h3>E-Commerce</h3><p>Online stores, product systems and customer-facing flows.</p></button><button data-service="Maintenance"><b>⚒</b><h3>Maintenance</h3><p>Bug fixes, improvements, optimization and ongoing support.</p></button><button data-service="Consultation"><b>♙</b><h3>Consultation</h3><p>Technical consultation, planning and implementation guidance.</p></button></div></div></section>
+
+    <section class="view" id="view-resume"><div class="full-panel panel resume-panel"><div class="resume-head"><div><p class="eyebrow">RESUME</p><h2>Yasin Arafat Shakil</h2><p>Full Stack Developer</p></div><button class="primary" id="printResume">Print / Save PDF</button></div><div class="resume-columns"><div><h3>PROFILE</h3><p>Full-Stack Developer from Bangladesh focused on modern web applications, APIs, responsive interfaces and practical digital products.</p><h3>CORE SKILLS</h3><div class="tags"><b>HTML</b><b>CSS</b><b>JavaScript</b><b>PHP</b><b>Laravel</b><b>Python</b><b>Django</b><b>MySQL</b></div></div><div><h3>EXPERIENCE</h3><p><b>2024 — Present</b><br>Full Stack Developer · Freelance</p><p><b>2023 — 2024</b><br>Web Developer</p><p><b>2022 — 2023</b><br>Junior Developer</p></div></div></div></section>
+
+    <section class="view" id="view-gallery"><div class="full-panel panel"><p class="eyebrow">VISUAL WORK</p><h2>Gallery</h2><div class="gallery-grid"><img src="assets/img/project-1.jpg" alt="Project visual"><img src="assets/img/project-2.jpg" alt="Project visual"><img src="assets/img/bg.gif" alt="Project visual"><img src="assets/img/profile.jpg" alt="Profile"></div></div></section>
+
+    <section class="view" id="view-contact"><div class="contact-layout"><article class="panel contact-copy"><p class="eyebrow">LET'S CONNECT</p><h2>Have a project in mind?</h2><p>Tell me what you want to build. Your inquiry will be validated in the browser and formatted into a WhatsApp message for <b>+601162051292</b>.</p><div class="contact-points"><span>● Available for work</span><span>⌖ Bangladesh / Remote</span><span>◌ WhatsApp preferred</span></div></article><form class="panel inquiry-form" id="inquiryForm" novalidate><input type="text" name="website" class="honeypot" tabindex="-1" autocomplete="off"><div class="form-grid"><label>Name<input name="name" required maxlength="60" autocomplete="name" placeholder="Your name"></label><label>Email<input name="email" type="email" required maxlength="120" autocomplete="email" placeholder="you@example.com"></label><label>Phone<input name="phone" maxlength="25" autocomplete="tel" placeholder="+60..."></label><label>Service<select name="service" required><option value="">Select a service</option><option>Web Development</option><option>Web Application</option><option>API Development</option><option>E-Commerce</option><option>Maintenance</option><option>Consultation</option><option>General Inquiry</option></select></label><label>Budget<select name="budget"><option>Not sure yet</option><option>Under RM 1,000</option><option>RM 1,000 – RM 3,000</option><option>RM 3,000 – RM 5,000</option><option>RM 5,000+</option></select></label><label>Timeline<select name="timeline"><option>Flexible</option><option>1–2 weeks</option><option>1–2 months</option><option>2–3 months</option><option>3+ months</option></select></label></div><label>Message<textarea name="message" required maxlength="1000" placeholder="Tell me about your project or question..."></textarea><div class="form-foot"><small id="formStatus">Your message opens in WhatsApp. You press Send to deliver it.</small><button class="primary" type="submit">Send via WhatsApp ↗</button></div></form></div></section>
+
+    <footer class="feature-strip"><div>⌁ <span><b>Modern Design</b><small>Clean & Professional</small></span></div><div>▣ <span><b>Fully Responsive</b><small>All Devices Supported</small></span></div><div>♢ <span><b>Secure & Fast</b><small>Optimized Performance</small></span></div><div>⚒ <span><b>Easy to Customize</b><small>Developer Friendly</small></span></div><div>◌ <span><b>Contact via WhatsApp</b><small>Direct Message to WhatsApp</small></span></div></footer>
+  </main>
+</div>
+
+<nav class="mobile-nav"><button data-view="dashboard" class="active"><span>⌂</span>Home</button><button data-view="about"><span>♙</span>About</button><button class="menu-float" id="menuFloat"><span>⊞</span><small>Menu</small></button><button data-view="projects"><span>▣</span>Projects</button><button data-view="contact"><span>✉</span>Contact</button></nav>
+
+<div class="command-modal" id="commandModal" aria-hidden="true"><div class="command-box"><div class="command-head"><span>⌕</span><input id="commandInput" placeholder="Search portfolio, projects, skills..."><kbd>ESC</kbd></div><div id="commandResults"></div></div></div>
+<div class="menu-sheet" id="menuSheet"><div class="sheet-backdrop" data-close-menu></div><div class="sheet"><div class="sheet-head"><b>QUICK MENU</b><button data-close-menu>×</button></div><div class="sheet-grid"><button data-view="skills">◈<span>Skills</span></button><button data-view="experience">◷<span>Experience</span></button><button data-view="certificates">▣<span>Certificates</span></button><button data-view="services">ϟ<span>Services</span></button><button data-view="resume">▤<span>Resume</span></button><button data-view="gallery">▧<span>Gallery</span></button><button data-view="contact">✉<span>Contact</span></button><button id="sheetTheme">☼<span>Theme</span></button></div></div></div>
+<div class="quick-panel" id="quickPanel" aria-hidden="true">
+  <div class="quick-panel-backdrop" data-close-quick></div>
+  <aside class="quick-panel-card">
+    <div class="sheet-head"><b>LIVE PORTFOLIO STATUS</b><button data-close-quick>×</button></div>
+    <div class="quick-panel-body">
+      <div class="quick-status"><i class="pulse-dot online"></i><div><strong>System Online</strong><small>All portfolio modules operational</small></div></div>
+      <div class="quick-metrics">
+        <div><span>LOCAL TIME</span><b id="panelClock">--:--:--</b></div>
+        <div><span>NETWORK</span><b id="panelNetwork">ONLINE</b></div>
+        <div><span>SESSION</span><b id="panelSession">00:00</b></div>
+        <div><span>VIEW</span><b id="panelView">DASHBOARD</b></div>
+      </div>
+      <div class="quick-actions">
+        <button data-view="projects">Explore Projects ↗</button>
+        <button data-view="skills">Open Skill Matrix ↗</button>
+        <button data-view="contact">Start a Conversation ↗</button>
+      </div>
+    </div>
+  </aside>
+</div>
+
+<div class="v4-overlay" id="terminalOverlay" aria-hidden="true">
+  <div class="v4-backdrop" data-close-v4></div>
+  <section class="v4-window terminal-window" role="dialog" aria-label="Interactive terminal">
+    <header class="v4-window-head">
+      <div><i class="terminal-led"></i><b>YASIN@PORTFOLIO:~</b></div>
+      <button data-close-v4>×</button>
+    </header>
+    <div class="terminal-screen" id="terminalScreen">
+      <div class="terminal-line">Portfolio OS v4.0 — interactive shell</div>
+      <div class="terminal-line">Type <span>help</span> to see available commands.</div>
+    </div>
+    <form class="terminal-input-row" id="terminalForm">
+      <span>visitor@portfolio:~$</span>
+      <input id="terminalInput" autocomplete="off" spellcheck="false" aria-label="Terminal command">
+    </form>
+  </section>
+</div>
+
+<div class="v4-overlay" id="analyticsOverlay" aria-hidden="true">
+  <div class="v4-backdrop" data-close-v4></div>
+  <section class="v4-window analytics-window" role="dialog" aria-label="Portfolio analytics">
+    <header class="v4-window-head">
+      <div><i class="terminal-led"></i><b>PORTFOLIO ANALYTICS</b></div>
+      <button data-close-v4>×</button>
+    </header>
+    <div class="analytics-body">
+      <div class="analytics-grid">
+        <article><span>SESSION</span><b id="aSession">00:00</b><small>Current visit</small></article>
+        <article><span>INTERACTIONS</span><b id="aInteractions">0</b><small>UI events</small></article>
+        <article><span>DEVICE</span><b id="aDevice">DESKTOP</b><small>Detected viewport</small></article>
+        <article><span>NETWORK</span><b id="aNetwork">ONLINE</b><small>Browser state</small></article>
+      </div>
+      <div class="signal-card">
+        <div class="signal-head"><b>INTERFACE SIGNAL</b><span id="signalScore">98%</span></div>
+        <div class="signal-track"><i id="signalBar"></i></div>
+        <p>Client-side telemetry only. No visitor data is transmitted by this dashboard.</p>
+      </div>
+      <div class="analytics-actions">
+        <button id="copyDiagnostics">Copy diagnostics</button>
+        <button id="resetSessionStats">Reset session</button>
+      </div>
+    </div>
+  </section>
+</div>
+
+<div class="v4-overlay" id="networkOverlay" aria-hidden="true">
+  <div class="v4-backdrop" data-close-v4></div>
+  <section class="v4-window network-window" role="dialog" aria-label="Network visualization">
+    <header class="v4-window-head">
+      <div><i class="terminal-led"></i><b>NETWORK TOPOLOGY</b></div>
+      <button data-close-v4>×</button>
+    </header>
+    <div class="network-canvas" id="networkCanvas">
+      <div class="network-core">YOU</div>
+      <div class="network-node n1">WEB</div>
+      <div class="network-node n2">GITHUB</div>
+      <div class="network-node n3">API</div>
+      <div class="network-node n4">CDN</div>
+      <span class="network-line l1"></span><span class="network-line l2"></span>
+      <span class="network-line l3"></span><span class="network-line l4"></span>
+    </div>
+    <div class="network-footer"><span><i class="pulse-dot online"></i> Local visualization</span><b id="networkFooterState">ONLINE</b></div>
+  </section>
+</div>
+
+<div class="v4-overlay" id="shortcutsOverlay" aria-hidden="true">
+  <div class="v4-backdrop" data-close-v4></div>
+  <section class="v4-window shortcuts-window" role="dialog" aria-label="Keyboard shortcuts">
+    <header class="v4-window-head">
+      <div><i class="terminal-led"></i><b>KEYBOARD MATRIX</b></div>
+      <button data-close-v4>×</button>
+    </header>
+    <div class="shortcut-grid">
+      <div><kbd>CTRL</kbd><span>+</span><kbd>K</kbd><p>Command palette</p></div>
+      <div><kbd>ALT</kbd><span>+</span><kbd>H</kbd><p>Dashboard</p></div>
+      <div><kbd>ALT</kbd><span>+</span><kbd>P</kbd><p>Projects</p></div>
+      <div><kbd>ALT</kbd><span>+</span><kbd>S</kbd><p>Skills</p></div>
+      <div><kbd>ALT</kbd><span>+</span><kbd>C</kbd><p>Contact</p></div>
+      <div><kbd>ALT</kbd><span>+</span><kbd>R</kbd><p>Resume</p></div>
+      <div><kbd>ESC</kbd><p>Close overlay</p></div>
+      <div><kbd>↑</kbd><kbd>↓</kbd><p>Navigate commands</p></div>
+    </div>
+  </section>
+</div>
+<div class="toast" id="toast"></div>
+<div class="project-modal" id="projectModal" aria-hidden="true"><div class="project-dialog"><button class="modal-x" id="closeProject" aria-label="Close">×</button><div id="projectModalContent"></div></div></div>
+<div class="lightbox" id="lightbox" aria-hidden="true"><button class="modal-x" id="closeLightbox" aria-label="Close">×</button><img src="" alt="Portfolio preview"></div>
+<div class="settings-modal" id="settingsModal" aria-hidden="true"><div class="settings-dialog"><div class="sheet-head"><b>APP SETTINGS</b><button id="closeSettings">×</button></div><div class="settings-body"><label class="setting-row"><span><strong>Theme</strong><small>Switch between dark and light UI</small></span><button class="setting-control" id="settingTheme">Dark / Light</button></label><label class="setting-row"><span><strong>Animations</strong><small>Enable advanced entrance and hover motion</small></span><button class="setting-control" id="settingMotion">ON</button></label><label class="setting-row"><span><strong>Interface</strong><small>Optimized fixed-window app layout</small></span><b class="setting-badge">NO SCROLL</b></label></div></div></div>
+<div class="service-modal" id="serviceModal"><div class="service-dialog"><div class="sheet-head"><b>SERVICE INQUIRY</b><button id="closeService">×</button></div><form id="serviceForm"><input type="hidden" name="service"><label>Name<input name="name" required maxlength="60" placeholder="Your name"></label><label>Email<input name="email" type="email" required maxlength="120" placeholder="you@example.com"></label><div class="form-grid"><label>Timeline<select name="timeline"><option>Flexible</option><option>1–2 weeks</option><option>1–2 months</option><option>2–3 months</option><option>3+ months</option></select></label><label>Budget<select name="budget"><option>Not sure yet</option><option>Under RM 1,000</option><option>RM 1,000 – RM 3,000</option><option>RM 3,000 – RM 5,000</option><option>RM 5,000+</option></select></label></div><label>Details<textarea name="message" required maxlength="1000" placeholder="What would you like to build?"></textarea><button class="primary" type="submit">Open WhatsApp ↗</button></form></div></div>
+<script src="assets/js/app.js" defer></script>
+</body>
+</html>
