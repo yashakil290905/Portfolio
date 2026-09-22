@@ -22,7 +22,9 @@
 * {
     box-sizing: border-box;
 }
-
+.job-type-main {
+  margin-right:4px;
+}
 /* =========================================
    PREMIUM ORANGE CUSTOM SCROLLBAR
    No scrollbar-width: thin
@@ -106,7 +108,6 @@ body {
   margin: 0;
   width: 100%;
   height: 100%;
-  overflow: hidden;
   background: var(--bg);
   color: var(--text);
   font-family: Inter, system-ui, sans-serif
@@ -443,7 +444,8 @@ body:before {
   border-radius: var(--radius);
   box-shadow: var(--shadow);
   min-width: 0;
-  overflow: hidden
+  padding: 10px;
+  
 }
 
 .hero {
@@ -460,7 +462,6 @@ body:before {
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden
 }
 
 .hero-photo:after {
@@ -717,7 +718,6 @@ body:before {
   color: #f2f4f6;
   font-size: 9px;
   white-space: nowrap;
-  overflow: hidden;
   text-overflow: ellipsis
 }
 
@@ -806,7 +806,7 @@ body:before {
   display: block;
   border-radius: 4px;
   margin-top: 4px;
-  overflow: hidden
+  
 }
 
 .bars em,
@@ -849,7 +849,7 @@ body:before {
   padding: 0 0 7px;
   text-align: left;
   color: #fff;
-  overflow: hidden;
+  
   cursor: pointer
 }
 
@@ -1040,15 +1040,61 @@ body:before {
   font-size: 7px;
   color: #7f8a96
 }
+.page-grid {
+    width: 100%;
+    height:auto;
+  min-height: 100%;
+    box-sizing: border-box;
 
-.page-grid,
-.full-panel {
-  height: 100%;
-  min-height: 0;
-  flex-direction: column;
-  display: flex;
+    display: flex;
+    flex-direction: column;
+
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
+.full-panel {
+    width: 100%;
+    height:auto;
+  min-height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+
+
+
+
+
+
+.page-grid {
+    height: 100%;
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/* Chrome, Edge, Safari */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ff914d;
+    border-radius: 10px;
+}
 /* =========================================================
    ABOUT PAGE HERO
    ========================================================= */
@@ -1094,7 +1140,7 @@ body:before {
     align-items: stretch;
     justify-content: center;
 
-    overflow: hidden;
+    
 
     border-radius: 20px;
 }
@@ -1229,9 +1275,10 @@ body:before {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 12px;
+
     margin-top: 14px;
-    flex: 1;
-    min-height: 0;
+
+    flex: 0 0 auto;
 }
 
 .skill-card {
@@ -1289,26 +1336,37 @@ body:before {
 }
 
 .project-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 12px;
-  height: calc(100% - 55px);
-  margin-top: 8px
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    min-height: 100%;
+    margin-top: 8px;
+}
+.project-grid #img{
+overflow:hidden;
+padding:0px;
+border-radius: 14px 14px 0 0 ;
+
 }
 
 .project-card {
   border: 1px solid var(--line);
   border-radius: 14px;
-  overflow: hidden;
+  height:auto;
+  min-height: 100%;
   background: #090d12;
   display: grid;
   grid-template-rows: 42% 58%
 }
 
-.project-card img {
+.project-card #img img {
   width: 100%;
   height: 100%;
-  object-fit: cover
+  object-fit: cover;
+}
+.project-card #img img:hover{
+  transform: scale(1.25);
+  transition: all 0.5s ease-in-out;
 }
 
 .project-card>div {
@@ -1345,7 +1403,7 @@ body:before {
 }
 
 .big-timeline {
-  height: calc(100% - 65px);
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -1404,7 +1462,7 @@ body:before {
   margin-top: 10px;
   border: 1px solid var(--line);
   border-radius: 14px;
-  overflow: hidden;
+  
   background: #fff
 }
 
@@ -1483,7 +1541,8 @@ body:before {
 }
 
 .gallery-grid {
-  height: calc(100% - 60px);
+  height:auto;
+  min-height: 100%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 10px;
@@ -1499,7 +1558,8 @@ body:before {
 }
 
 .contact-layout {
-  height: 100%;
+  height:auto;
+  min-height: 100%;
   display: grid;
   grid-template-columns: .8fr 1.2fr;
   gap: 12px
@@ -1685,7 +1745,7 @@ body:before {
 .service-dialog {
   width: min(500px, calc(100vw - 26px));
   padding: 0;
-  overflow: hidden
+  
 }
 
 .service-dialog form {
@@ -1744,7 +1804,7 @@ body:before {
 }
 
 .mobile-nav {
-  display: none
+  display: block
 }
 
 @media (max-width:1200px) {
@@ -1783,10 +1843,8 @@ body:before {
 
 @media (max-width:900px) {
 
-  html,
-  body {
-    overflow: hidden
-  }
+
+  
 
   .app-shell {
     display: block
@@ -1872,7 +1930,7 @@ body:before {
 
   .view {
     padding: 10px 10px 60px;
-    overflow: hidden
+    
   }
 
   .dashboard-grid {
@@ -2199,7 +2257,7 @@ body:before {
     border: 1px solid #333a43;
     border-radius: 16px;
     box-shadow: 0 25px 80px #000;
-    overflow: hidden
+    
   }
 
   .sheet-grid {
@@ -2288,7 +2346,7 @@ body:before {
   .hero-copy>p:not(.eyebrow) {
     font-size: 8px;
     max-height: 48px;
-    overflow: hidden
+    
   }
 
   .eyebrow {
@@ -2361,7 +2419,6 @@ body:before {
     font-size: 8px;
     line-height: 1.4;
     max-height: 72px;
-    overflow: hidden
   }
 
   .detail-grid {
@@ -2427,7 +2484,6 @@ body:before {
   .project-card p {
     font-size: 7px;
     max-height: 38px;
-    overflow: hidden
   }
 
   .project-card .primary {
@@ -2618,9 +2674,7 @@ html {
   scroll-behavior: smooth
 }
 
-body.modal-open {
-  overflow: hidden
-}
+
 
 .card,
 .panel,
@@ -2683,7 +2737,6 @@ body.modal-open {
 .search-box,
 .download-btn {
   position: relative;
-  overflow: hidden;
   transition: transform .2s var(--ease), box-shadow .2s ease, border-color .2s ease, background .2s ease
 }
 
@@ -2978,7 +3031,6 @@ body.modal-open {
 .project-dialog {
   width: min(850px, 92vw);
   max-height: 88vh;
-  overflow: hidden;
   display: grid;
   grid-template-columns: 1.05fr .95fr;
   background: linear-gradient(145deg, #10151b, #070a0e);
@@ -3486,7 +3538,6 @@ body.modal-open {
   border: 1px solid rgba(255, 107, 24, .35);
   border-radius: 18px;
   box-shadow: 0 30px 90px #000;
-  overflow: hidden;
   animation: commandIn .3s var(--ease) both
 }
 
@@ -3603,7 +3654,7 @@ a {
   display: grid;
   place-items: center;
   background: #030508;
-  overflow: hidden;
+  
   transition: opacity .75s var(--ease-expo), visibility .75s;
 }
 
@@ -3728,7 +3779,7 @@ a {
   height: 3px;
   border-radius: 99px;
   background: #151b22;
-  overflow: hidden;
+  
   border: 1px solid #232a31
 }
 
@@ -3840,7 +3891,6 @@ a {
 .filter,
 .mobile-nav button {
   position: relative;
-  overflow: hidden;
   isolation: isolate
 }
 
@@ -4379,15 +4429,12 @@ a {
   body {
     width: 100%;
     height: 100%;
-    overflow: hidden;
-    overscroll-behavior: none
   }
 
   .app-shell {
     width: 100%;
     height: 100%;
     display: block;
-    overflow: hidden
   }
 
   .sidebar {
@@ -4398,26 +4445,22 @@ a {
     width: 100%;
     height: 100%;
     min-width: 0;
-    overflow: hidden;
     grid-template-rows: 56px minmax(0, 1fr)
   }
 
   .topbar {
     width: 100%;
     min-width: 0;
-    overflow: hidden
   }
 
   .crumb {
     flex: 0 0 auto;
     min-width: auto;
     max-width: 92px;
-    overflow: hidden
   }
 
   .crumb b {
     white-space: nowrap;
-    overflow: hidden;
     text-overflow: ellipsis
   }
 
@@ -4430,7 +4473,6 @@ a {
 
   .search-box>span:nth-child(2) {
     white-space: nowrap;
-    overflow: hidden;
     text-overflow: ellipsis
   }
 
@@ -4522,13 +4564,11 @@ a {
   #view-dashboard .hero-copy {
     min-width: 0;
     padding: 2px 5px;
-    overflow: hidden
   }
 
   #view-dashboard .eyebrow {
     font-size: clamp(6px, 1.65vw, 8px);
     white-space: nowrap;
-    overflow: hidden;
     text-overflow: ellipsis
   }
 
@@ -4545,7 +4585,6 @@ a {
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
-    overflow: hidden;
     margin: 3px 0
   }
 
@@ -4593,7 +4632,6 @@ a {
     min-height: 0;
     padding: 7px;
     gap: 5px;
-    overflow: hidden
   }
 
   #view-dashboard .stat:nth-child(1),
@@ -4695,7 +4733,6 @@ a {
     font-size: 7px;
     max-width: 100%;
     white-space: nowrap;
-    overflow: hidden;
     text-overflow: ellipsis
   }
 
@@ -4779,7 +4816,6 @@ a {
     grid-template-rows: auto auto;
     column-gap: 6px;
     padding: 0;
-    overflow: hidden
   }
 
   #view-dashboard .project-mini img {
@@ -4793,7 +4829,6 @@ a {
     font-size: 7px;
     align-self: end;
     white-space: nowrap;
-    overflow: hidden;
     text-overflow: ellipsis
   }
 
@@ -5457,7 +5492,6 @@ a {
   font: 700 14px "Space Grotesk";
   margin-top: 3px;
   white-space: nowrap;
-  overflow: hidden;
   text-overflow: ellipsis
 }
 
@@ -5497,7 +5531,6 @@ a {
   height: 3px;
   background: #242b32;
   border-radius: 4px;
-  overflow: hidden
 }
 
 .telemetry-bars em {
@@ -5814,7 +5847,6 @@ body.fx-lite * {
   border: 1px solid var(--v4-border);
   border-radius: 15px;
   box-shadow: 0 35px 120px rgba(0, 0, 0, .72), 0 0 50px var(--glow);
-  overflow: hidden;
   transition: transform .25s ease
 }
 
@@ -5959,7 +5991,7 @@ body.fx-lite * {
   height: 5px;
   background: #20272e;
   border-radius: 4px;
-  overflow: hidden;
+  
   margin-top: 9px
 }
 
@@ -6000,7 +6032,7 @@ body.fx-lite * {
     linear-gradient(rgba(255, 255, 255, .025) 1px, transparent 1px),
     linear-gradient(90deg, rgba(255, 255, 255, .025) 1px, transparent 1px);
   background-size: auto, 28px 28px, 28px 28px;
-  overflow: hidden
+   
 }
 
 .network-canvas:before {
@@ -6282,7 +6314,7 @@ body {
 
   #view-dashboard .info-strip>div {
     min-width: 0;
-    overflow: hidden;
+    
   }
 
   #view-dashboard .info-strip>div:nth-child(5) {
@@ -6323,12 +6355,12 @@ body {
 
   #view-dashboard .skills-overview {
     height: calc(100% - 42px);
-    overflow: hidden;
+    
   }
 
   #view-dashboard .project-mini-grid {
     height: calc(100% - 42px);
-    overflow: hidden;
+    
   }
 
   #view-dashboard .timeline {
@@ -6460,7 +6492,7 @@ body {
 
   html,
   body {
-    overflow: hidden;
+    
   }
 
   .main {
@@ -6506,7 +6538,7 @@ body {
     display: grid;
     grid-template-columns: minmax(125px, .85fr) minmax(0, 1.15fr);
     padding: 12px;
-    overflow: hidden;
+    
   }
 
   #view-dashboard .hero-photo {
@@ -6597,7 +6629,7 @@ body {
   #view-dashboard .info-strip>div {
     height: 42px;
     min-width: 0;
-    overflow: hidden;
+    
   }
 
   #view-dashboard .info-strip>div:nth-child(1),
@@ -6789,7 +6821,7 @@ body {
     grid-row: 1;
     height: auto;
     min-height: 270px;
-    overflow: hidden;
+    
   }
 
   #view-dashboard .stat-grid {
