@@ -672,5 +672,3 @@ bootLoader().finally(init);
 
 
 
-<script src="https://kit.fontawesome.com/YOUR_KIT_CODE.js" crossorigin="anonymous"></script>
-<i class="fa-brands fa-github"></i>
