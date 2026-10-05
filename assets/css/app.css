@@ -26,6 +26,16 @@
 .job-type-main {
   margin-right:4px;
 }
+
+
+a{
+  color: #fff;
+  font-size: 12px;
+  text-decoration: none;
+
+}
+
+
 /* =========================================
    PREMIUM ORANGE CUSTOM SCROLLBAR
    No scrollbar-width: thin
