@@ -34,7 +34,12 @@ a{
   text-decoration: none;
 
 }
-
+button{
+  border: 0;
+  background: none;
+  padding: 0;
+  margin: 0;
+}
 
 /* =========================================
    PREMIUM ORANGE CUSTOM SCROLLBAR
@@ -456,6 +461,7 @@ body:before {
   box-shadow: var(--shadow);
   min-width: 0;
   padding: 10px;
+  height: 100%;
   
 }
 
@@ -1067,7 +1073,7 @@ body:before {
 .full-panel {
     width: 100%;
     height:auto;
-  min-height: 100%;
+    min-height: 100%;
     padding: 20px;
     box-sizing: border-box;
 
@@ -1487,21 +1493,53 @@ border-radius: 14px 14px 0 0 ;
   margin: 0
 }
 
-.certificate-full {
-  height: calc(100% - 60px);
-  margin-top: 10px;
-  border: 1px solid var(--line);
-  border-radius: 14px;
-  
-  background: #fff
+.certificate-grib {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    height:auto;
+    min-height: 100%;
+    margin: 8px 0 4px;
+    /* border: 2px solid #ff01d5 ; */
+  }
+.certificate-grib .certificate-card{
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    height:fit-content;
+    min-height: 100%;
+     display: grid;
+    grid-template-rows: 65% 35%;
+    padding: 14px;
+    background: #090d12; 
+
+ 
 }
 
+.certificate-full { 
+  border-radius: 14px 14px 0 0;
+  overflow: hidden; 
+  min-height: 50%;
+}
 .certificate-full iframe {
   width: 100%;
-  height: 100%;
-  border: 0
+  height:auto;
+  min-height: 100%;
+  border: 0;
 }
-
+.certificate-grib .certificate-info{
+  padding: 14px 0;
+  display: flex;
+  flex-direction: column; 
+}
+.certificate-grib .certificate-info h3 {
+  font-size: 15px;
+  margin:0;
+ height:auto;
+}
+.certificate-grib .certificate-info a{
+  width: 100%;
+  margin-top: 10px;
+}
 .page-subtitle {
   color: #8f99a4;
   font-size: 11px
