@@ -1506,10 +1506,10 @@ border-radius: 14px 14px 0 0 ;
 .certificate-grib .certificate-card{
     border: 1px solid var(--line);
     border-radius: 14px;
-    height:fit-content;
+    height:auto;
     min-height: 100%;
      display: grid;
-    grid-template-rows: 55% 45%;
+    grid-template-rows: 50% 45%;
     padding: 14px;
     background: #090d12; 
 }
@@ -1519,7 +1519,7 @@ border-radius: 14px 14px 0 0 ;
   border-radius: 14px 14px 0 0;
   overflow: hidden; 
   height: 90%;
-    border: 2px solid #ff01d5 ;
+  /* border: 2px solid #ff01d5 ; */
 
 }
 .certificate-full iframe {
@@ -1529,20 +1529,14 @@ border-radius: 14px 14px 0 0 ;
   border: 0;
   object-fit: cover;
 }
-.certificate-full img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  padding: 0;
-  margin: 0;
-}
+
 .certificate-grib .certificate-info{
   padding: 14px 0;
   display: flex;
   flex-direction: column; 
   /* border: 2px solid #fff; */
   height: 100% !important;
+  margin-top: auto;
 }
 .certificate-grib .certificate-info h3 {
   font-size: 16px;
