@@ -1581,41 +1581,337 @@ border-radius: 14px 14px 0 0 ;
   line-height: 1.5
 }
 
-.resume-head {
+.resume-head,
+.resume-tag {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  border-bottom: 1px solid var(--line);
-  padding-bottom: 15px
+  padding-bottom: 5px
 }
 
-.resume-head h2 {
+.resume-head .resume-title h2 {
   margin: 0;
-  font: 700 26px "Space Grotesk"
+  font: 700 26px "Space Grotesk";
+  width: 100%;
 }
 
-.resume-head p:not(.eyebrow) {
+.resume-head .resume-title h2 span {
+ margin-left: 6px;
+}
+.resume-head .resume-title p:not(.eyebrow) {
   color: #8f99a4;
-  font-size: 11px
+  font-size: 14px;
+  margin: 5px 0 10px;
 }
 
-.resume-columns {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 35px;
-  padding-top: 20px
+.resume-head  h6{ 
+  font-size: 11px;
+  color: #abb5be;
+  margin: 4px 0 0 0;
+}
+.resume-head .resume-title .mylivepolio{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 14px 0 0 0;
+  gap: 6px; 
+}
+.resume-head .resume-title .mylivepolio a{
+  display: block;
+  color: #fff;
+  font-size: 9px;
+  text-decoration: none;
+  padding: 7px 14px;
+  border: 1px solid var(--accent);
+  border-radius: 15px;
+}
+.resume-head .resume-title .mylivepolio a:hover{
+  transform: translateY(-3px);
+  transition: all 0.3s ease-in-out;
 }
 
-.resume-columns h3 {
-  font-size: 10px;
-  color: var(--accent)
+.resume-head .resume-title .mylivepolio a:active{
+  transform: scale(.9);
+  transition: all 0.3s ease-in-out;
 }
 
-.resume-columns p {
-  color: #9aa4ae;
+.resume-head .resume-img{
+  width: 130px;
+  height: 130px;
+  border-radius: 50%; 
+  overflow: hidden;
+  margin:0 15px 0 auto;
+}
+
+.resume-head .resume-img img{
+ display: block;
+  width: 100%;
+  object-fit: cover; 
+}
+
+ 
+
+.myresume h3 {
+  font-size: 15px;
+  color: var(--accent);
+  border-bottom: 1px solid var(--line);
+  padding:0 0 15px 0 ;
+}
+
+
+.resume-Work_Experience .resume_grid,
+.resume-Projects-skills .resume_feature_project .Featured_Projects,
+.resume-Projects-skills .resume_Skills-Education .exp_title,
+.resume-Personal_Projects-Courses .Personal_Project,
+.resume-Personal_Projects-Courses .resume_Courses-References .exp_title
+{
+margin-left: 12px;
+padding-bottom: 10px;
+  
+} 
+
+
+.myresume .exp_title h4{
+  font-size: 14px;
+  margin: 0 0 ;
+  position: relative;
+  display: block;
+  line-height: 1.5;
+}
+.myresume .exp_title h4::after{
+  content: "";
+  display: block;
+  position: absolute;
+  transform: translateY(65%);
+  top: 0;
+  left: -12px;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: var(--text);
+  border: 3px solid var(--BuTon);
+}
+.myresume .exp_title span{
+  color: #8f99a4;
+   font-size: 11px;
+  margin: 5px 0 8px;
+  display: inline-block;
+}
+
+.resume-Summary,
+.resume-Work_Experience,
+.resume-Projects-skills,
+ .resume-Personal_Projects-Courses p {
+  color: #eceded;
   font-size: 11px;
   line-height: 1.7
 }
+.resume_grid{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  margin-top: 10px
+}
+
+
+.myresume .tags b{
+  padding: 4px 7px;
+  font-size: 9px;
+  border-radius: 6px;
+}
+.myresume ul{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 0;
+  margin: 0 0  5px 0 ;
+}
+.myresume ul il{
+  color: #eceded;
+  font-size: 11px;
+  padding-left: 10px;
+}
+.myresume ul il.tag-title{
+  font-size: 14px;
+  color: #fff;
+  padding: 0;
+}
+.myresume .site_urls p{
+  margin: 0 0 5px 0 ;
+}
+.myresume .site_urls p span{
+font-size: 13px;
+color: var(--text);
+}
+.myresume .site_urls p span i{
+font-size: 10px;
+color: var(--BuTon);
+margin-right: 3px;
+display: inline-block;
+}
+
+.resume_Skills-Education .exp_title .skills{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+}
+.resume_Skills-Education .exp_title .skills span{
+  width: 20%;
+  color: var(--text); 
+  font-size: 12px;
+}
+.resume_Courses-References .resume_References span{
+      margin: -1px 0 2px;
+      display: block;
+}
+.resume_Courses-References .resume_References p{
+  padding: 5px 0 0 0;
+  margin: 0;
+  line-height: 1;
+
+}
+
+.resume_Courses-References .resume_References p span{
+  color: #d7d7d8;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+/* ===== RESUME PDF LAYOUT FIX ===== */
+
+@page {
+  size: A4;
+  margin: 10mm;
+}
+
+@media print {
+
+  body {
+    margin: 0 !important;
+    padding: 0 !important;
+    background: #fff !important;
+    color: #222 !important;
+    overflow: visible !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  /* Hide other website sections */
+  body * {
+    visibility: hidden;
+  }
+
+  /* Show resume only */
+  #view-resume,
+  #view-resume * {
+    visibility: visible;
+  }
+
+  #view-resume {
+    display: block !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: visible !important;
+    background: #fff !important;
+  }
+
+  #printResume,
+  .resume-tag {
+    display: none !important;
+  }
+
+  #view-resume .panel,
+  #view-resume .full-panel,
+  #view-resume .myresume {
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: visible !important;
+    box-shadow: none !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    background: #fff !important;
+    color: #222 !important;
+  }
+
+  .resume-head {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: flex-start !important;
+    padding-bottom: 12px !important;
+  }
+
+  .resume-Summary,
+  .resume_grid {
+    display: grid !important;
+    grid-template-columns: repeat(repeat(2, 1fr)) !important;
+    gap: 12px !important;
+    margin-top: 10px !important;
+  }
+
+  #view-resume h2 {
+    color: #222 !important;
+    font-size: 22px !important;
+  }
+
+  #view-resume h3 {
+    color: #f06b32 !important;
+    font-size: 13px !important;
+    margin: 10px 0 6px !important;
+    padding-bottom: 5px !important;
+  }
+
+  #view-resume h4 {
+    color: #222 !important;
+    font-size: 10px !important;
+  }
+
+  #view-resume p,
+  #view-resume li,
+  #view-resume span {
+    color: #333 !important;
+    font-size: 9px !important;
+    line-height: 1.45 !important;
+  }
+
+  #view-resume a {
+    color: #222 !important;
+    text-decoration: none !important;
+    overflow-wrap: anywhere !important;
+  }
+
+  .resume-head,
+  .resume_grid > div,
+  .Featured_Projects,
+  .Personal_Project {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 .gallery-grid {
   height:auto;
@@ -1623,10 +1919,10 @@ border-radius: 14px 14px 0 0 ;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 10px;
-  margin-top: 10px;
-  /* border: 2px solid #fff; */
+  margin-top: 10px; 
 
 }
+
 .gallery-grid .gallery-card {
   border: 1px solid var(--line);
   border-radius: 14px;
@@ -2583,11 +2879,11 @@ border-radius: 14px 14px 0 0 ;
     display: none
   }
 
-  .resume-columns {
+  .resume-Summary {
     gap: 15px
   }
 
-  .resume-columns p {
+  .resume-Summary p {
     font-size: 8px
   }
 
@@ -2748,7 +3044,7 @@ border-radius: 14px 14px 0 0 ;
 .light .service-page-grid p,
 .light .page-subtitle,
 .light .contact-copy p,
-.light .resume-columns p {
+.light .resume-Summary p {
   color: #5d6874
 }
 
@@ -4977,7 +5273,7 @@ a {
   /* Other views become clean mobile app pages rather than squeezed desktop grids. */
   .page-grid,
   .contact-layout,
-  .resume-columns {
+  .resume-Summary {
     display: grid;
     grid-template-columns: 1fr !important;
     gap: 8px
@@ -5162,7 +5458,7 @@ a {
     width: 100%
   }
 
-  .resume-columns {
+  .resume-Summary {
     gap: 12px
   }
 
