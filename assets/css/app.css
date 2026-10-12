@@ -2301,6 +2301,8 @@ display: inline-block;
   .service-grid {
     grid-template-columns: repeat(2, 1fr)
   }
+
+  
   .gallery-grid{
     grid-template-columns: repeat(4, 1fr);
   }
@@ -2435,14 +2437,15 @@ display: inline-block;
   #view-dashboard .hero-copy>p:not(.eyebrow){
     font-size: 8px !important;
     line-height: 1.1 !important;
-
+    margin-bottom: 15px !important;
   }
-  #view-dashboard .hero-actions button{
+  #view-dashboard .hero-actions button,
+  .About-inpu .primary{
     padding: 9px 10px !important;
     font-size: 8px !important;
     line-height: .9;
     min-height: fit-content !important;
-    margin-bottom: 5px;
+    margin: 5px 0;
   }
   
 
@@ -2524,9 +2527,12 @@ display: inline-block;
   .skills-overview {
     grid-template-columns: 1fr;
     padding: 0 9px 8px
+  } 
+
+  .certificate-grib .certificate-card{
+    min-height: fit-content !important;
+    grid-template-rows: 45% 45%;
   }
-
-
 
   .project-mini-grid {
     grid-template-columns: 1fr 1fr;
@@ -2634,6 +2640,7 @@ display: inline-block;
 
   .page-hero p:not(.eyebrow) {
     font-size: 10px
+    
   }
 
   .detail-grid {
