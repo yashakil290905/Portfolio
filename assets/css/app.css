@@ -1,5 +1,3 @@
-
-
 :root {
   --bg: #05070a;
   --panel: #0a0e13;
@@ -26,7 +24,6 @@
 .job-type-main {
   margin-right:4px;
 }
-
 
 a{
   color: #fff;
@@ -462,7 +459,7 @@ body:before {
   min-width: 0;
   padding: 10px;
   height: 100%;
-  
+
 }
 
 .hero {
@@ -823,7 +820,7 @@ body:before {
   display: block;
   border-radius: 4px;
   margin-top: 4px;
-  
+
 }
 
 .bars em,
@@ -866,7 +863,7 @@ body:before {
   padding: 0 0 7px;
   text-align: left;
   color: #fff;
-  
+
   cursor: pointer
 }
 
@@ -1084,20 +1081,12 @@ body:before {
     overflow-x: hidden;
 }
 
-
-
-
-
-
-
 .page-grid {
     height: 100%;
     min-height: 0;
     display: flex;
     flex-direction: column;
 }
-
-
 
 /* Chrome, Edge, Safari */
 ::-webkit-scrollbar {
@@ -1123,7 +1112,7 @@ body:before {
 
     display: flex;
     flex-direction: column;
-    
+
 }
 
 .page-hero {
@@ -1143,36 +1132,37 @@ body:before {
     flex: 0 0 auto;
 }
 
-
 /* =========================================================
    PORTRAIT
    ========================================================= */
 
 .portrait {
-    max-height: 290px;
-
+    height: 100%;
+    max-height: 100%;
+    
     min-width: 0;
     min-height: 0;
-
+    
     display: flex;
     align-items: stretch;
     justify-content: center;
-
-  margin: auto 0;    
-
+    
+    margin: auto 0;
+    
     border-radius: 20px;
-}
-
-
-/* =========================================================
-   PORTRAIT IMAGE
-   ========================================================= */
-
-.portrait img {
+    /* border: 1px solid; */
+  }
+  
+  /* =========================================================
+  PORTRAIT IMAGE
+  ========================================================= */
+  
+  .portrait img {
     display: block;
-
+    
+    height: 100%;
     max-width: 100%;
-    max-height: 290px;
+    max-height: 100%;
 
     object-fit: cover;
 
@@ -1186,8 +1176,6 @@ body:before {
 .page-hero .About-inpu{
   margin: auto 0;
 }
-
-
 
 .page-hero h2 {
   font: 700 34px "Space Grotesk";
@@ -1256,31 +1244,6 @@ body:before {
   font-size: 10px
 }
 
-/* .full-panel {
-  padding: 20px;
-  height:100%;
-  display:flex;
-  flex-direction: column
-}
-
-.skill-page-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 12px;
-  margin-top: 14px;
-  height: 100%;
-  
-
-}
-
-.skill-card {
-  border: 1px solid var(--line);
-  border-radius: 14px;
-  padding: 18px;
-  background: rgba(255, 255, 255, .015)
-} */
-
-
  .full-panel {
     padding: 20px;
     height: 100%;
@@ -1307,7 +1270,6 @@ body:before {
     height: 100%;
     box-sizing: border-box;
 }
-
 
 .skill-card h3 {
   font-size: 13px;
@@ -1371,8 +1333,6 @@ body:before {
     margin: 8px 0 4px;
 }
 
-
-
 .project-grid #img{
 overflow:hidden;
 padding:0px;
@@ -1393,10 +1353,6 @@ border-radius: 14px 14px 0 0 ;
   display: grid;
   grid-template-rows: 45% 55%;
 }
-
-
-
-
 
 .project-card #img img {
   width: 100%;
@@ -1513,13 +1469,12 @@ border-radius: 14px 14px 0 0 ;
      display: grid;
     grid-template-rows: 50% 45%;
     padding: 14px;
-    background: #090d12; 
+    background: #090d12;
 }
 
-
-.certificate-full { 
+.certificate-full {
   border-radius: 14px 14px 0 0;
-  overflow: hidden; 
+  overflow: hidden;
   height: 90%;
   /* border: 2px solid #ff01d5 ; */
 
@@ -1535,7 +1490,7 @@ border-radius: 14px 14px 0 0 ;
 .certificate-grib .certificate-info{
   padding: 14px 0;
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   /* border: 2px solid #fff; */
   height: 100% !important;
   margin-top: auto;
@@ -1606,7 +1561,7 @@ border-radius: 14px 14px 0 0 ;
   margin: 5px 0 10px;
 }
 
-.resume-head  h6{ 
+.resume-head  h6{
   font-size: 11px;
   color: #abb5be;
   margin: 4px 0 0 0;
@@ -1616,7 +1571,7 @@ border-radius: 14px 14px 0 0 ;
   align-items: center;
   justify-content: flex-start;
   margin: 14px 0 0 0;
-  gap: 6px; 
+  gap: 6px;
 }
 .resume-head .resume-title .mylivepolio a{
   display: block;
@@ -1640,7 +1595,7 @@ border-radius: 14px 14px 0 0 ;
 .resume-head .resume-img{
   width: 130px;
   height: 130px;
-  border-radius: 50%; 
+  border-radius: 50%;
   overflow: hidden;
   margin:0 15px 0 auto;
 }
@@ -1648,10 +1603,8 @@ border-radius: 14px 14px 0 0 ;
 .resume-head .resume-img img{
  display: block;
   width: 100%;
-  object-fit: cover; 
+  object-fit: cover;
 }
-
- 
 
 .myresume h3 {
   font-size: 15px;
@@ -1659,7 +1612,6 @@ border-radius: 14px 14px 0 0 ;
   border-bottom: 1px solid var(--line);
   padding:0 0 15px 0 ;
 }
-
 
 .resume-Work_Experience .resume_grid,
 .resume-Projects-skills .resume_feature_project .Featured_Projects,
@@ -1669,9 +1621,8 @@ border-radius: 14px 14px 0 0 ;
 {
 margin-left: 12px;
 padding-bottom: 10px;
-  
-} 
 
+}
 
 .myresume .exp_title h4{
   font-size: 14px;
@@ -1714,7 +1665,6 @@ padding-bottom: 10px;
   gap: 15px;
   margin-top: 10px
 }
-
 
 .myresume .tags b{
   padding: 4px 7px;
@@ -1760,7 +1710,7 @@ display: inline-block;
 }
 .resume_Skills-Education .exp_title .skills span{
   width: 20%;
-  color: var(--text); 
+  color: var(--text);
   font-size: 12px;
 }
 .resume_Courses-References .resume_References span{
@@ -1780,8 +1730,6 @@ display: inline-block;
   margin: 0;
   padding: 0;
 }
-
-
 
 /* ===== RESUME PDF LAYOUT FIX ===== */
 
@@ -1858,7 +1806,7 @@ display: inline-block;
   .resume-Summary,
   .resume_grid {
     display: grid !important;
-    grid-template-columns: repeat(repeat(2, 1fr)) !important;
+    grid-template-columns: repeat(2, 1fr) !important;
     gap: 12px !important;
     margin-top: 10px !important;
   }
@@ -1903,25 +1851,13 @@ display: inline-block;
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
 .gallery-grid {
   height:auto;
   min-height: 100%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 10px;
-  margin-top: 10px; 
+  margin-top: 10px;
 
 }
 
@@ -2131,7 +2067,7 @@ display: inline-block;
 .service-dialog {
   width: min(500px, calc(100vw - 26px));
   padding: 0;
-  
+
 }
 
 .service-dialog form {
@@ -2214,11 +2150,11 @@ display: inline-block;
     grid-template-columns: 40% 60%
   }
   .project-mini-grid{
-  
+
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 10px;
-  
+
   }
   .project-mini-grid .project-mini1{
     display: none;
@@ -2238,6 +2174,12 @@ display: inline-block;
   .info-strip strong {
     max-width: 105px;
     font-size: 8px;
+  }
+  .page-hero .portrait{
+    height: 100%;
+  }
+  .page-hero .portrait img{
+    margin: auto 0;
   }
   .page-hero h2{
     font-size: 28px;
@@ -2269,7 +2211,7 @@ display: inline-block;
   margin: 3px 0;
   }
   .project-grid .project-card p{
-    font-size: 8px; 
+    font-size: 8px;
     line-height: 1.2;
     margin: 4px 0;
   }
@@ -2284,17 +2226,17 @@ display: inline-block;
     border-radius: 7px;
   }
 
-  .certificate-grib .certificate-card { 
-    border-radius: 14px;  
+  .certificate-grib .certificate-card {
+    border-radius: 14px;
     grid-template-rows: 50% 50%;
-    padding: 10px; 
+    padding: 10px;
   }
   .certificate-grib .certificate-info h3{
     font-size: 12px;
     margin: 0 0 auto 0;
   }
   .certificate-grib .certificate-info .tags b{
-    font-size: 6px; 
+    font-size: 6px;
     border-radius: 4px;
     padding: 3px 4px;
   }
@@ -2302,16 +2244,12 @@ display: inline-block;
     grid-template-columns: repeat(2, 1fr)
   }
 
-  
   .gallery-grid{
     grid-template-columns: repeat(4, 1fr);
   }
 }
 
 @media (max-width:900px) {
-
-
-  
 
   .app-shell {
     display: block;
@@ -2397,7 +2335,7 @@ display: inline-block;
 
   .view {
     padding: 10px 10px 60px;
-    
+
   }
 
   .dashboard-grid {
@@ -2450,12 +2388,10 @@ display: inline-block;
     min-height: fit-content !important;
     margin: 5px 0;
   }
-  
 
   .hero h2 {
     font-size: 13px
   }
-
 
   .stat-grid {
     display: flex !important;
@@ -2503,8 +2439,6 @@ display: inline-block;
     padding: 0 5px
   }
 
-  
-
   .info-strip strong {
     font-size: 7px
   }
@@ -2530,9 +2464,7 @@ display: inline-block;
   .skills-overview {
     grid-template-columns: 1fr;
     padding: 0 9px 8px
-  } 
-
- 
+  }
 
   .project-mini-grid {
     grid-template-columns: 1fr 1fr;
@@ -2629,8 +2561,11 @@ display: inline-block;
     padding: 15px;
     gap: 15px
   }
-
+  .portrait{
+    height: 100%;
+  }
   .portrait img {
+    margin: auto 0;
     height: 30px;
   }
 
@@ -2640,12 +2575,13 @@ display: inline-block;
 
   .page-hero p:not(.eyebrow) {
     font-size: 10px
-    
+
   }
 
   .detail-grid {
-    height: calc(45% - 8px)
-    
+    height: calc(45% - 8px);
+    margin: 0;
+
   }
 
   .detail-grid .panel {
@@ -2658,8 +2594,13 @@ display: inline-block;
     grid-template-columns: repeat(2, 1fr)
   }
 
+  .skill-page-grid{
+    margin-top: 8px;
+  }
+
   .project-grid {
-    gap: 8px
+    gap: 8px;
+    margin: 8px 0 0 ;
   }
 
   .project-card {
@@ -2737,7 +2678,7 @@ display: inline-block;
     border: 1px solid #333a43;
     border-radius: 16px;
     box-shadow: 0 25px 80px #000;
-    
+
   }
 
   .sheet-grid {
@@ -2829,10 +2770,11 @@ display: inline-block;
     margin-bottom: 5px
   }
 
-  .hero-copy>p:not(.eyebrow) {
+  #view-dashboard .hero-copy>p:not(.eyebrow) {
     font-size: 8px;
     max-height: 48px;
-    
+    margin-bottom: 2px !important;
+
   }
 
   .eyebrow {
@@ -2868,11 +2810,7 @@ display: inline-block;
 
   .stat small {
     font-size: 6px
-  }
-
-  .info-strip>div:first-child span {
-    display: none
-  }
+  } 
 
   .skills-overview {
     padding-top: 2px
@@ -2993,10 +2931,15 @@ display: inline-block;
     font-size: 20px
 
   }
-   
+
   .resume_Skills-Education .exp_title .skills span{
-    font-size: 11px;
-  } 
+    font-size: 10px;
+
+  }
+  .resume_Skills-Education .exp_title .skills .tags b{
+    padding: 3px 6px;
+    font-size: 8px;
+  }
 
   .contact-layout {
     grid-template-columns: 1fr 1.25fr
@@ -3164,8 +3107,6 @@ display: inline-block;
 html {
   scroll-behavior: smooth
 }
-
-
 
 .card,
 .panel,
@@ -3650,7 +3591,6 @@ html {
   animation: commandIn .35s var(--ease) both
 }
 
-
 /* v2.5 TYPEWRITER / TERMINAL ROLE ENGINE */
 .typewriter-title.job_title {
   position: relative;
@@ -4109,7 +4049,6 @@ html {
   }
 }
 
-
 /* =========================================================
    v2.6 — ADVANCED MOTION / LOADER / MICRO-INTERACTIONS
    ========================================================= */
@@ -4145,7 +4084,7 @@ a {
   display: grid;
   place-items: center;
   background: #030508;
-  
+
   transition: opacity .75s var(--ease-expo), visibility .75s;
 }
 
@@ -4270,7 +4209,7 @@ a {
   height: 3px;
   border-radius: 99px;
   background: #151b22;
-  
+
   border: 1px solid #232a31
 }
 
@@ -4921,8 +4860,6 @@ a {
     width: 100%;
     height: 100%;
   }
-
- 
 
   .sidebar {
     max-width: 86vw
@@ -5694,23 +5631,21 @@ a {
 
   #view-dashboard .stat-grid {
     grid-template-rows: 54px 46px;
-    gap: 5px
+    gap: 6px;
+    /* border: 1px solid !important; */
   }
 
   #view-dashboard .stat {
-    padding: 5px
+    height: 34% !important; 
   }
 
-  #view-dashboard .stat>span {
-    display: none
-  }
 
   #view-dashboard .stat b {
     font-size: 12px
   }
 
   #view-dashboard .stat small {
-    font-size: 5px
+    font-size: 10px !important
   }
 
   #view-dashboard .location {
@@ -5750,6 +5685,103 @@ a {
   .section-head h3 {
     font-size: 7.5px
   }
+  .resume-tag .primary{
+  font-size: 6px;
+  padding: 8px 6px;
+  height: fit-content;
+  min-height: fit-content;
+}
+.resume-head .resume-title h2{
+  font-size: 15px;
+}
+.resume-head .resume-img{
+  width: 90px;
+  height: 90px;
+} 
+  
+.resume-head h6 {
+    font-size: 8px;
+}
+.mylivepolio{
+  margin: 8px 0 0 0 !important;
+}
+
+.mylivepolio a{
+  font-size: 7px !important; 
+    padding: 5px 12px !important;
+}
+
+.myresume h3 {
+    font-size: 11px;
+    padding: 0 0 5px 0 !important;
+    margin: 7px 0 !important ;
+}
+
+.myresume .exp_title h4 {
+    font-size: 8px; 
+    line-height: 1.7;
+
+}
+.myresume .exp_title h4::after { 
+    left: -10px;
+    width: 2px;
+    height: 2px; 
+    border: 2px solid var(--BuTon);
+}
+.myresume .exp_title span { 
+    font-size: 7px;
+    margin: 3px 0 5px; 
+}
+
+.myresume p{
+        font-size: 8px !important;
+        line-height: 1.2;
+    }
+
+  .myresume .tags{
+    margin: 5px 0 7px;
+  }
+  .myresume .tags b {
+    padding: 2px 5px !important;
+    font-size: 6px !important;
+    border-radius: 4px;
+}
+.myresume ul il{
+  font-size: 7px;
+  line-height: 1.25;
+}
+.myresume ul il.tag-title {
+    font-size: 10px;
+}
+.myresume .site_urls p{
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.myresume .site_urls p span i{
+  font-size: 6px;
+  margin-right: 1px;
+}
+.myresume .site_urls p span {
+  display: inline-block;
+    font-size: 7px;
+    width: 35px ;
+  }
+  .myresume .site_urls p a{ 
+    display: inline-block;
+    font-size: 6px;
+    width: 100%;
+  }
+  
+  .resume_Skills-Education .exp_title .skills span{
+    font-size: 7px;
+    width: 43% !important;
+    }
+    .resume_Skills-Education .exp_title b{
+      font-size: 5px !important;
+    }
+
 }
 
 @media (max-width:360px) {
@@ -5757,9 +5789,11 @@ a {
     height: 184px;
     grid-template-columns: 36% 64%
   }
-
+    #view-dashboard .hero-photo img {
+        height: 85% !important;
+    }
   #view-dashboard .hero h1 {
-    font-size: 16px
+    font-size: 16px !important
   }
 
   #view-dashboard .hero-copy>p:not(.eyebrow) {
@@ -5776,24 +5810,12 @@ a {
     grid-template-rows: 44px 44px 40px
   }
 
-  #view-dashboard .stat:nth-child(1) {
-    grid-column: 1;
-    grid-row: 1
+  
+  #view-dashboard .stat{
+    width: 48% !important;
   }
-
-  .stat:nth-child(2) {
-    grid-column: 2;
-    grid-row: 1
-  }
-
-  .stat:nth-child(3) {
-    grid-column: 1;
-    grid-row: 2
-  }
-
-  .stat:nth-child(4) {
-    grid-column: 2;
-    grid-row: 2
+  .stat span{
+    display: inline-block;
   }
 
   #view-dashboard .location {
@@ -5829,6 +5851,28 @@ a {
     width: 54px;
     height: 54px
   }
+
+      #view-about .page-hero h2{
+        font-size: 12px !important;
+        margin-bottom: 3px !important ;
+      }
+    #view-about .page-hero p:not(.eyebrow) {
+        font-size: 7px;
+        line-height: 1.1;
+    }
+    .About-inpu .primary {
+        padding: 7px 8px !important;
+        font-size: 7px !important;
+        line-height: .9;
+        margin: 5px 0;
+    }
+    .myresume .site_urls{
+      display: none;
+    }
+    .myresume .resume_Education{
+      display: none;
+    }
+
 }
 
 @media (orientation:landscape) and (max-height:520px) and (max-width:900px) {
@@ -6473,7 +6517,7 @@ body.fx-lite * {
   height: 5px;
   background: #20272e;
   border-radius: 4px;
-  
+
   margin-top: 9px
 }
 
@@ -6514,7 +6558,7 @@ body.fx-lite * {
     linear-gradient(rgba(255, 255, 255, .025) 1px, transparent 1px),
     linear-gradient(90deg, rgba(255, 255, 255, .025) 1px, transparent 1px);
   background-size: auto, 28px 28px, 28px 28px;
-   
+
 }
 
 .network-canvas:before {
@@ -6796,7 +6840,7 @@ body {
 
   #view-dashboard .info-strip>div {
     min-width: 0;
-    
+
   }
 
   #view-dashboard .info-strip>div:nth-child(5) {
@@ -6837,12 +6881,12 @@ body {
 
   #view-dashboard .skills-overview {
     height: calc(100% - 42px);
-    
+
   }
 
   #view-dashboard .project-mini-grid {
     height: calc(100% - 42px);
-    
+
   }
 
   #view-dashboard .timeline {
@@ -6972,8 +7016,6 @@ body {
    document flow and the view itself is the only scroll surface. */
 @media (max-width:600px) {
 
- 
-
   .main {
     height: 100%;
     min-height: 100%;
@@ -7018,7 +7060,7 @@ body {
     display: grid;
     grid-template-columns: minmax(125px, .85fr) minmax(0, 1.15fr);
     padding: 12px;
-    
+
   }
 
   #view-dashboard .hero-photo {
@@ -7068,12 +7110,14 @@ body {
     min-height: 0;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     grid-template-rows: auto auto auto;
-    gap: 6px;
+    /* gap: 6px; */
   }
 
   #view-dashboard .stat {
-    min-height: 72px;
+    height: 33%;
+    min-height: 25%;
     padding: 9px;
+    width: 49%;
   }
 
   #view-dashboard .stat>span {
@@ -7082,20 +7126,25 @@ body {
     height: 28px;
     flex: 0 0 28px;
   }
-
+  
   #view-dashboard .stat b {
     font-size: 16px;
   }
 
-  #view-dashboard .stat small {
-    font-size: 7px;
+  #view-dashboard .stat small { 
     white-space: normal;
+    line-height: .8;
   }
-
+  #view-dashboard .stat br{
+    height: 1px !important;
+    width: 1px !important;
+    display: block;
+    border: 1px solid;
+  }
   #view-dashboard .location {
     grid-column: 1/-1 !important;
     grid-row: 3 !important;
-    height: 54px;
+    height: 54px !important;
     display: flex;
   }
 
@@ -7109,7 +7158,7 @@ body {
   #view-dashboard .info-strip>div {
     height: 42px;
     min-width: 0;
-    
+
   }
 
   #view-dashboard .info-strip>div:nth-child(1),
@@ -7249,17 +7298,26 @@ body {
     padding: 7px;
   }
 
-  #view-dashboard .stat>span {
-    display: none !important;
-  }
-
   #view-dashboard .stat b {
     font-size: 14px;
   }
-
-  #view-dashboard .stat small {
-    font-size: 6px;
+  #view-about .page-hero h2 {
+    font-size: 15px;
+    margin-bottom: 8px;
   }
+  #view-about .page-hero p:not(.eyebrow){
+    margin: 2px 0;
+  }
+  .big-timeline h3 {
+    font-size: 12px;
+    margin: 5px 0;
+  }
+  .big-timeline p {
+    font-size: 10px;
+    line-height: 1.4;
+    margin: 0;
+  }
+
 }
 
 
@@ -7301,7 +7359,7 @@ body {
     grid-row: 1;
     height: auto;
     min-height: 270px;
-    
+
   }
 
   #view-dashboard .stat-grid {
